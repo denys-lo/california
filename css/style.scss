@@ -9,15 +9,27 @@ $font_headers: "Readex Pro";
   }
 }
 
+@mixin img-adaptive($height) {
+  position: relative;
+  display: block;
+  height: $height;
+  text-align: center;
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: $height;
+    max-width: 100%;
+    vertical-align: middle;
+  }
+}
+
 body {
   background-color: #FFFFFF;
   color: #000000;
   font: $font_paragraph;
 }
-//
-//.container {
-//  max-width: 87.5rem;
-//}
 
 h2 {
   font-size: 3.625rem;
@@ -239,6 +251,19 @@ a:hover {
       }
     }
     &.watch {
+      background-image: url("../img/watch.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: right 216px center;
+      @include max-screen(991px) {
+        background-position: right 174px center;
+      }
+      @include max-screen(767px) {
+        margin-bottom: 30px;
+      }
+      @include max-screen(400px) {
+        background-position: right 150px center;
+      }
       &:hover {
         margin-top: 72px;
       }
@@ -246,6 +271,22 @@ a:hover {
         padding-left: 42px;
         height: 100%;
         padding-right: 0;
+      }
+      .categories-title {
+        padding: 58px 0;
+        width: 100%;
+        @include max-screen(1199px) {
+          padding: 30px 0;
+        }
+        @include max-screen(991px) {
+          padding: 3px 0;
+        }
+        @include max-screen(767px) {
+          padding: 58px 0;
+        }
+        @include max-screen(400px) {
+          padding: 30px 0;
+        }
       }
     }
     &.phones {
@@ -258,7 +299,6 @@ a:hover {
         height: 382px;
       }
       @include max-screen(767px) {
-        margin-top: 30px;
         height: 440px;
       }
       img {
@@ -284,7 +324,6 @@ a:hover {
         height: 382px;
       }
       @include max-screen(767px) {
-        margin-top: 30px;
         height: 440px;
       }
       .categories-title {
@@ -294,6 +333,71 @@ a:hover {
         }
         h4 {
           text-align: center;
+        }
+      }
+    }
+  }
+}
+
+//Most selled
+.most-selled {
+  padding-bottom: 74px;
+  .most-selled-items {
+    .item {
+      .item-img {
+        @include img-adaptive(214px);
+      }
+      h4 {
+        font-family: $font_headers;
+        font-size: 22px;
+        line-height: 28px;
+        margin-top: 37px;
+        margin-bottom: 9px;
+      }
+      p:first-of-type {
+        font-size: 14px;
+        line-height: 17px;
+        color: #4B4B4B;
+        margin-bottom: 25px;
+      }
+      p:last-of-type {
+        font-size: 18px;
+        line-height: 22px;
+        color: #000000;
+      }
+    }
+  }
+}
+
+// Best items
+.best-products {
+  padding-bottom: 72px;
+  .best-peoducts-items {
+    .item {
+      background: #F8F9FA;
+      border-radius: 16px;
+      text-align: center;
+      padding-top: 41px;
+      p {
+        font-family: $font_headers;
+        font-size: 13px;
+        line-height: 17px;
+        margin-bottom: 0;
+      }
+      h4 {
+        font-size: 28px;
+        line-height: 35px;
+        font-family: $font_headers;
+      }
+      .item_img {
+        @include img-adaptive(220px);
+      }
+      .button {
+        margin: 30px 0;
+      }
+      &:last-of-type {
+        @include max-screen(992px) {
+          margin-top: 30px;
         }
       }
     }

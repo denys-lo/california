@@ -217,6 +217,27 @@ a:hover {
   padding-left: 42px;
   padding-right: 92px;
 }
+.categories-items .item.watch {
+  background-image: url("../img/watch.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right 216px center;
+}
+@media screen and (max-width: 991px) {
+  .categories-items .item.watch {
+    background-position: right 174px center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .categories-items .item.watch {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .categories-items .item.watch {
+    background-position: right 150px center;
+  }
+}
 .categories-items .item.watch:hover {
   margin-top: 72px;
 }
@@ -224,6 +245,30 @@ a:hover {
   padding-left: 42px;
   height: 100%;
   padding-right: 0;
+}
+.categories-items .item.watch .categories-title {
+  padding: 58px 0;
+  width: 100%;
+}
+@media screen and (max-width: 1199px) {
+  .categories-items .item.watch .categories-title {
+    padding: 30px 0;
+  }
+}
+@media screen and (max-width: 991px) {
+  .categories-items .item.watch .categories-title {
+    padding: 3px 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .categories-items .item.watch .categories-title {
+    padding: 58px 0;
+  }
+}
+@media screen and (max-width: 400px) {
+  .categories-items .item.watch .categories-title {
+    padding: 30px 0;
+  }
 }
 .categories-items .item.phones {
   text-align: center;
@@ -241,7 +286,6 @@ a:hover {
 }
 @media screen and (max-width: 767px) {
   .categories-items .item.phones {
-    margin-top: 30px;
     height: 440px;
   }
 }
@@ -273,7 +317,6 @@ a:hover {
 }
 @media screen and (max-width: 767px) {
   .categories-items .item.tablet {
-    margin-top: 30px;
     height: 440px;
   }
 }
@@ -285,6 +328,87 @@ a:hover {
 }
 .categories-items .item.tablet .categories-title h4 {
   text-align: center;
+}
+
+.most-selled {
+  padding-bottom: 74px;
+}
+.most-selled .most-selled-items .item .item-img {
+  position: relative;
+  display: block;
+  height: 214px;
+  text-align: center;
+}
+.most-selled .most-selled-items .item .item-img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-height: 214px;
+  max-width: 100%;
+  vertical-align: middle;
+}
+.most-selled .most-selled-items .item h4 {
+  font-family: "Readex Pro";
+  font-size: 22px;
+  line-height: 28px;
+  margin-top: 37px;
+  margin-bottom: 9px;
+}
+.most-selled .most-selled-items .item p:first-of-type {
+  font-size: 14px;
+  line-height: 17px;
+  color: #4B4B4B;
+  margin-bottom: 25px;
+}
+.most-selled .most-selled-items .item p:last-of-type {
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+
+.best-products {
+  padding-bottom: 72px;
+}
+.best-products .best-peoducts-items .item {
+  background: #F8F9FA;
+  border-radius: 16px;
+  text-align: center;
+  padding-top: 41px;
+}
+.best-products .best-peoducts-items .item p {
+  font-family: "Readex Pro";
+  font-size: 13px;
+  line-height: 17px;
+  margin-bottom: 0;
+}
+.best-products .best-peoducts-items .item h4 {
+  font-size: 28px;
+  line-height: 35px;
+  font-family: "Readex Pro";
+}
+.best-products .best-peoducts-items .item .item_img {
+  position: relative;
+  display: block;
+  height: 220px;
+  text-align: center;
+}
+.best-products .best-peoducts-items .item .item_img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-height: 220px;
+  max-width: 100%;
+  vertical-align: middle;
+}
+.best-products .best-peoducts-items .item .button {
+  margin: 30px 0;
+}
+@media screen and (max-width: 992px) {
+  .best-products .best-peoducts-items .item:last-of-type {
+    margin-top: 30px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
