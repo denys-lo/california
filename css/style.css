@@ -544,4 +544,75 @@ a:hover {
   border: 1px solid #000000;
 }
 
+.signup {
+  padding-bottom: 19px;
+  margin: 0 15px;
+}
+.signup .container {
+  max-width: 935px;
+  background-color: #DCE5E2;
+  border-radius: 16px;
+  padding: 47px 15px 43px 15px;
+}
+.signup .container .section-title p {
+  font-size: 16px;
+  line-height: 19px;
+}
+.signup .container .item_img {
+  margin-bottom: 14px;
+  position: relative;
+  display: block;
+  height: 200px;
+  text-align: center;
+}
+.signup .container .item_img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-height: 200px;
+  max-width: 100%;
+  vertical-align: middle;
+}
+.signup .container .signup_form {
+  max-width: 400px;
+  margin: auto;
+}
+@media screen and (max-width: 575px) {
+  .signup .container .signup_form {
+    max-width: 260px;
+  }
+}
+.signup .container .signup_form form label {
+  display: none;
+}
+.signup .container .signup_form form #site-signup {
+  background-color: #DCE5E2;
+  border: 1px solid #000000;
+  border-radius: 54px 0 0 54px;
+  padding: 16px 32px;
+}
+@media screen and (max-width: 575px) {
+  .signup .container .signup_form form #site-signup {
+    width: 144px;
+  }
+}
+.signup .container .signup_form form #site-signup::placeholder {
+  color: #000000;
+  opacity: initial;
+}
+.signup .container .signup_form form .btn-signup {
+  color: #FFFFFF;
+  background: #000000;
+  border-radius: 0 200px 200px 0;
+  padding: 16px 32px;
+  border: 1px solid #000000;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.signup .container .signup_form form .btn-signup:hover {
+  color: #000000;
+  background: #FFFFFF;
+}
+
 /*# sourceMappingURL=style.css.map */

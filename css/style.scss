@@ -545,3 +545,63 @@ a:hover {
     }
   }
 }
+
+//Sign up
+.signup {
+  padding-bottom: 19px;
+  margin: 0 15px;
+  .container {
+    max-width: 935px;
+    background-color: #DCE5E2;
+    border-radius: 16px;
+    padding: 47px 15px 43px 15px;
+    .section-title {
+      p {
+        font-size: 16px;
+        line-height: 19px;
+      }
+    }
+    .item_img {
+      margin-bottom: 14px;
+      @include img-adaptive(200px);
+    }
+    .signup_form {
+      max-width: 400px;
+      margin: auto;
+      @include max-screen(575px) {
+        max-width: 260px;
+      }
+      form {
+        label {
+          display: none;
+        }
+        #site-signup {
+          background-color: #DCE5E2;
+          border: 1px solid #000000;
+          border-radius: 54px 0 0 54px;
+          padding: 16px 32px;
+          @include max-screen(575px) {
+            width: 144px;
+          }
+          &::placeholder {
+            color: #000000;
+            opacity: initial;
+          }
+        }
+        .btn-signup {
+          color: #FFFFFF;
+          background: #000000;
+          border-radius: 0 200px 200px 0;
+          padding: 16px 32px;
+          border: 1px solid #000000;
+          cursor: pointer;
+          transition: 0.3s;
+          &:hover {
+            color: #000000;
+            background: #FFFFFF;
+          }
+        }
+      }
+    }
+  }
+}
