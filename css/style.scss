@@ -34,8 +34,13 @@ h2 {
   line-height: 62px;
 }
 
-a:hover {
-  text-decoration: none;
+a {
+  color: #000000;
+
+  &:hover {
+    color: rgba(0, 0, 0, 0.7);
+    text-decoration: none;
+  }
 }
 
 .button {
@@ -220,7 +225,7 @@ a:hover {
         }
 
         p {
-          font-family: 'Inter';
+          font-family: 'Inter', sans-serif;
           font-size: 15px;
           line-height: 19px;
           text-align: right;
@@ -278,19 +283,50 @@ a:hover {
         }
 
         .categories-title {
-          padding: 58px 0;
+          p {
+            padding-top: 58px;
+          }
+
+          h4 {
+            padding-bottom: 58px;
+          }
+
           width: 100%;
           @include max-screen(1199px) {
-            padding: 30px 0;
+            p {
+              padding-top: 30px;
+            }
+
+            h4 {
+              padding-bottom: 30px;
+            }
           }
           @include max-screen(991px) {
-            padding: 3px 0;
+            p {
+              padding-top: 3px;
+            }
+
+            h4 {
+              padding-bottom: 3px;
+            }
           }
           @include max-screen(767px) {
-            padding: 58px 0;
+            p {
+              padding-top: 58px;
+            }
+
+            h4 {
+              padding-bottom: 58px;
+            }
           }
           @include max-screen(400px) {
-            padding: 30px 0;
+            p {
+              padding-top: 30px;
+            }
+
+            h4 {
+              padding-bottom: 30px;
+            }
           }
         }
       }
@@ -357,11 +393,16 @@ a:hover {
 //Most selled
 .most-selled {
   padding-bottom: 74px;
+
   .most-selled-items {
     .item {
+      @include max-screen(575px) {
+        text-align: center;
+      }
       .item-img {
         @include img-adaptive(214px);
       }
+
       h4 {
         font-family: $font_headers;
         font-size: 22px;
@@ -369,12 +410,14 @@ a:hover {
         margin-top: 37px;
         margin-bottom: 9px;
       }
+
       p:first-of-type {
         font-size: 14px;
         line-height: 17px;
         color: #4B4B4B;
         margin-bottom: 25px;
       }
+
       p:last-of-type {
         font-size: 18px;
         line-height: 22px;
@@ -387,29 +430,35 @@ a:hover {
 // Best items
 .best-products {
   padding-bottom: 72px;
+
   .best-peoducts-items {
     .item {
       background: #F8F9FA;
       border-radius: 16px;
       text-align: center;
       padding-top: 41px;
+
       p {
         font-family: $font_headers;
         font-size: 13px;
         line-height: 17px;
         margin-bottom: 0;
       }
+
       h4 {
         font-size: 28px;
         line-height: 35px;
         font-family: $font_headers;
       }
+
       .item_img {
         @include img-adaptive(220px);
       }
+
       .button {
         margin: 30px 0;
       }
+
       &:last-of-type {
         @include max-screen(992px) {
           margin-top: 30px;
@@ -424,14 +473,21 @@ a:hover {
   .ideas-item {
     .row {
       margin-bottom: 73px;
+      @include max-screen(575px) {
+        margin-bottom: 15px;
+      }
+
     }
+
     .item-img {
       @include img-adaptive(420px);
+
       img {
         top: 0;
         left: 0;
         transform: none;
       }
+
       @include max-screen(1199px) {
         height: initial;
         max-height: 420px;
@@ -443,6 +499,7 @@ a:hover {
         }
       }
     }
+
     p {
       font: $font_paragraph;
       font-size: 21px;
@@ -457,16 +514,19 @@ a:hover {
         margin-bottom: 21px;
       }
     }
+
     .see-all {
       width: 100%;
       text-align: center;
       margin-bottom: 75px;
+
       a {
         display: inline-block;
         font-size: 24px;
         line-height: 29px;
         text-transform: capitalize;
         color: #000000;
+
         &:after {
           content: "";
           display: inline-block;
@@ -475,8 +535,10 @@ a:hover {
           height: 28px;
           vertical-align: top;
         }
+
         &:hover {
           color: #4c4c4c;
+
           &:after {
             background-image: url("../img/see_all_grey.svg");
           }
@@ -489,18 +551,23 @@ a:hover {
 //Search
 .search {
   padding: 0 15px;
+
   .section-title {
     padding-bottom: 24px;
+
     h3 {
       padding: 0;
     }
   }
+
   .search-from {
     max-width: 650px;
     margin: auto;
+
     form {
       position: relative;
       margin-bottom: 40px;
+
       .btn-search {
         width: 70px;
         position: absolute;
@@ -515,29 +582,35 @@ a:hover {
         align-items: center;
       }
     }
+
     label {
       display: none;
     }
+
     #site-search {
       width: 100%;
       background-color: #F8F9FA;
       border: 1px solid #C5C5C5;
       border-radius: 100px;
       padding: 21px 26px 21px 67px;
+
       &::placeholder {
         color: #000000;
         opacity: initial;
       }
     }
+
     .tags {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       margin-bottom: 68px;
+
       .button {
         margin: 5px;
         padding: 12px 22px;
         border: 1px solid #C5C5C5;
+
         &:hover {
           border: 1px solid #000000;
         }
@@ -550,56 +623,144 @@ a:hover {
 .signup {
   padding-bottom: 19px;
   margin: 0 15px;
+
   .container {
     max-width: 935px;
     background-color: #DCE5E2;
     border-radius: 16px;
     padding: 47px 15px 43px 15px;
+
     .section-title {
       p {
         font-size: 16px;
         line-height: 19px;
       }
     }
+
     .item_img {
       margin-bottom: 14px;
       @include img-adaptive(200px);
     }
+
     .signup_form {
       max-width: 400px;
       margin: auto;
       @include max-screen(575px) {
         max-width: 260px;
       }
+
       form {
         label {
           display: none;
         }
+
         #site-signup {
           background-color: #DCE5E2;
           border: 1px solid #000000;
           border-radius: 54px 0 0 54px;
-          padding: 16px 32px;
+          padding: 16px 30px;
           @include max-screen(575px) {
             width: 144px;
           }
+
           &::placeholder {
             color: #000000;
             opacity: initial;
           }
         }
+
         .btn-signup {
           color: #FFFFFF;
           background: #000000;
           border-radius: 0 200px 200px 0;
-          padding: 16px 32px;
+          padding: 16px 30px;
           border: 1px solid #000000;
           cursor: pointer;
           transition: 0.3s;
+
           &:hover {
             color: #000000;
             background: #FFFFFF;
           }
+        }
+      }
+    }
+  }
+}
+
+//Footer
+footer {
+  background-color: #F8F9FA;;
+  border-top: 1px solid #DCE5E2;
+  padding-top: 55px;
+
+  .footer-items {
+    .footer-logo {
+      margin-bottom: 18px;
+
+      img {
+        margin-bottom: 18px;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 19px;
+        max-width: 304px;
+        @include max-screen(1199px) {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+
+  .footer-nav {
+    h4 {
+      margin-bottom: 19px;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+
+      li {
+        font-size: 17px;
+        line-height: 22px;
+        margin-bottom: 14px;
+      }
+    }
+  }
+
+  .authors {
+    margin-top: 78px;
+    border-top: 1px solid #DCE5E2;
+    @include max-screen(575px) {
+      margin-top: 0;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .author {
+      padding-top: 52px;
+      padding-bottom: 4px;
+      font-size: 18px;
+      line-height: 22px;
+      @include max-screen(575px) {
+        padding-top: 4px;
+      }
+
+      a:after {
+        content: "";
+        display: inline-block;
+        background-image: url("../img/see_all.svg");
+        background-size: contain;
+        width: 21px;
+        height: 22px;
+        vertical-align: middle;
+      }
+
+      a:hover {
+        &:after {
+          background-image: url("../img/see_all_grey.svg");
         }
       }
     }

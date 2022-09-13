@@ -13,6 +13,26 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Shopping basket</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Your basket is empty.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-secondary">Go to order</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <header>
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light">
@@ -48,10 +68,10 @@
                 </ul>
 
                 <div class="nav-icons d-flex justify-content-end">
-                    <a class="nav-search" href="#">
+                    <a class="nav-search" href="#search-section" id="nav-search">
                         <img src="img/search.svg" alt="Search">
                     </a>
-                    <a class="nav-cart" href="#">
+                    <a class="nav-cart" href="#" data-toggle="modal" data-target="#exampleModal">
                         <img src="img/cart.svg" alt="Cart">
                     </a>
                 </div>
@@ -154,36 +174,38 @@
             <div class="row">
                 <div class="col-12 col-md-6">
                     <div class="item laptops">
-                        <img src="img/macbook.png" alt="Macbook">
+                        <a href="#">
+                            <img src="img/macbook.png" alt="Macbook">
+                        </a>
                         <div class="categories-title">
-                            <p>Laptops</p>
-                            <h4>True Laptop<br>Solution</h4>
+                            <a href="#"><p>Laptops</p></a>
+                            <a href="#"><h4>True Laptop<br>Solution</h4></a>
                         </div>
                     </div>
                     <div class="item watch d-flex align-items-center">
                         <div class="categories-title">
-                            <p>Watch</p>
-                            <h4>Not just <br>stylisht</h4>
+                            <a href="#"><p>Watch</p></a>
+                            <a href="#"><h4>Not just <br>stylisht</h4></a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-6 col-md-3">
                     <div class="item phones d-flex flex-column justify-content-center">
-                        <img src="img/phones.png" alt="Phones">
+                        <a href="#"><img src="img/phones.png" alt="Phones"></a>
                         <div class="categories-title">
-                            <p>Phones</p>
-                            <h4>Your day to day life</h4>
+                            <a href="#"><p>Phones</p></a>
+                            <a href="#"><h4>Your day to day life</h4></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-6 col-md-3">
                     <div class="item tablet d-flex flex-column justify-content-center">
                         <div class="categories-title">
-                            <p>Tablet</p>
-                            <h4>Empower your work</h4>
+                            <a href="#"><p>Tablet</p></a>
+                            <a href="#"><h4>Empower your work</h4></a>
                         </div>
-                        <img src="img/tablets.png" alt="Tablet">
+                        <a href="#"><img src="img/tablets.png" alt="Tablet"></a>
                     </div>
                 </div>
             </div>
@@ -202,40 +224,40 @@
                 <div class="col-12 col-sm-6 col-lg-3">
                     <div class="item">
                         <div class="item-img">
-                            <img src="img/macbook_most_seled.png" alt="MacBook Pro 13">
+                            <a href="#"><img src="img/macbook_most_seled.png" alt="MacBook Pro 13"></a>
                         </div>
-                        <h4>MacBook Pro 13</h4>
-                        <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</p>
+                        <h4><a href="#">MacBook Pro 13</a></h4>
+                        <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet...</p>
                         <p>$ 1,200.00 USD</p>
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-lg-3">
                     <div class="item">
                         <div class="item-img">
-                            <img src="img/watch_most_seller.png" alt="Smart Galaxy Watch 3">
+                            <a href="#"><img src="img/watch_most_seller.png" alt="Smart Galaxy Watch 3"></a>
                         </div>
-                        <h4>Smart Galaxy Watch 3</h4>
-                        <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+                        <h4><a href="#">Smart Galaxy Watch 3</a></h4>
+                        <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet...</p>
                         <p>$ 199.00 USD</p>
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-lg-3">
                     <div class="item">
                         <div class="item-img">
-                            <img src="img/macbook_m1_most_seller.png" alt="MacBook Air M1">
+                            <a href="#"><img src="img/macbook_m1_most_seller.png" alt="MacBook Air M1"></a>
                         </div>
-                        <h4>MacBook Air M1</h4>
-                        <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+                        <h4><a href="#">MacBook Air M1</a></h4>
+                        <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet...</p>
                         <p>$ 1,009.00 USD</p>
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-lg-3">
                     <div class="item">
                         <div class="item-img">
-                            <img src="img/ipad_most_seller.png" alt="MacBook Pro 13">
+                            <a href="#"><img src="img/ipad_most_seller.png" alt="MacBook Pro 13"></a>
                         </div>
-                        <h4>iPad</h4>
-                        <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+                        <h4><a href="#">iPad</a></h4>
+                        <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet...</p>
                         <p>$ 610.00 USD</p>
                     </div>
                 </div>
@@ -292,7 +314,7 @@
             <h3>Ideas have a place here</h3>
             <p>Our new Limited Edition Winter Design BESPOKE 4-Door Flex™</p>
         </div>
-        
+
         <div class="ideas-item">
             <div class="row">
                 <div class="col-12 col-lg-6">
@@ -313,7 +335,7 @@
         </div>
     </div>
 </section>
-<section class="search">
+<section class="search" id="search-section">
     <div class="section-title">
         <h3>Looking for anything else?</h3>
     </div>
@@ -360,9 +382,74 @@
         </div>
     </div>
 </section>
+<footer>
+    <div class="container">
+        <div class="footer-items">
+            <div class="row">
+                <div class="col-12 col-xl-4">
+                    <div class="footer-logo">
+                        <img src="img/logo_footer.svg" alt="Logo">
+                        <p>Sign up for texts to be notified about our best offers on the perfect gifts.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 col-xl-2">
+                    <div class="footer-nav">
+                        <h4>All products</h4>
+                        <ul>
+                            <li><a href="#">Phones</a></li>
+                            <li><a href="#">Watch</a></li>
+                            <li><a href="#">Tablet</a></li>
+                            <li><a href="#">Laptops</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 col-xl-2">
+                    <div class="footer-nav">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Support</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 col-xl-2">
+                    <div class="footer-nav">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="#">Style Guide</a></li>
+                            <li><a href="#">Licensing</a></li>
+                            <li><a href="#">Change Log</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 col-xl-2">
+                    <div class="footer-nav">
+                        <h4>Follow Us</h4>
+                        <ul>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">LinkedIn</a></li>
+                            <li><a href="#">Youtube</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="authors d-flex justify-content-between">
+                <div class="author">
+                    <span>Made By: </span><a href="#">Azwedo</a>
+                </div>
+                <div class="author">
+                    <span>Powered By: </span><a href="#">Webflow</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 
 <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
         crossorigin="anonymous"></script>
 <script src="js/bootstrap.js"></script>
+<script src="js/scripts.js"></script>
 </body>
 </html>

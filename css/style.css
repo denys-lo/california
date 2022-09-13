@@ -9,7 +9,11 @@ h2 {
   line-height: 62px;
 }
 
+a {
+  color: #000000;
+}
 a:hover {
+  color: rgba(0, 0, 0, 0.7);
   text-decoration: none;
 }
 
@@ -181,7 +185,7 @@ a:hover {
   }
 }
 .categories .categories-items .item .categories-title p {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-size: 15px;
   line-height: 19px;
   text-align: right;
@@ -239,27 +243,44 @@ a:hover {
   padding-right: 0;
 }
 .categories .categories-items .item.watch .categories-title {
-  padding: 58px 0;
   width: 100%;
 }
+.categories .categories-items .item.watch .categories-title p {
+  padding-top: 58px;
+}
+.categories .categories-items .item.watch .categories-title h4 {
+  padding-bottom: 58px;
+}
 @media screen and (max-width: 1199px) {
-  .categories .categories-items .item.watch .categories-title {
-    padding: 30px 0;
+  .categories .categories-items .item.watch .categories-title p {
+    padding-top: 30px;
+  }
+  .categories .categories-items .item.watch .categories-title h4 {
+    padding-bottom: 30px;
   }
 }
 @media screen and (max-width: 991px) {
-  .categories .categories-items .item.watch .categories-title {
-    padding: 3px 0;
+  .categories .categories-items .item.watch .categories-title p {
+    padding-top: 3px;
+  }
+  .categories .categories-items .item.watch .categories-title h4 {
+    padding-bottom: 3px;
   }
 }
 @media screen and (max-width: 767px) {
-  .categories .categories-items .item.watch .categories-title {
-    padding: 58px 0;
+  .categories .categories-items .item.watch .categories-title p {
+    padding-top: 58px;
+  }
+  .categories .categories-items .item.watch .categories-title h4 {
+    padding-bottom: 58px;
   }
 }
 @media screen and (max-width: 400px) {
-  .categories .categories-items .item.watch .categories-title {
-    padding: 30px 0;
+  .categories .categories-items .item.watch .categories-title p {
+    padding-top: 30px;
+  }
+  .categories .categories-items .item.watch .categories-title h4 {
+    padding-bottom: 30px;
   }
 }
 .categories .categories-items .item.phones {
@@ -324,6 +345,11 @@ a:hover {
 
 .most-selled {
   padding-bottom: 74px;
+}
+@media screen and (max-width: 575px) {
+  .most-selled .most-selled-items .item {
+    text-align: center;
+  }
 }
 .most-selled .most-selled-items .item .item-img {
   position: relative;
@@ -405,6 +431,11 @@ a:hover {
 
 .ideas .ideas-item .row {
   margin-bottom: 73px;
+}
+@media screen and (max-width: 575px) {
+  .ideas .ideas-item .row {
+    margin-bottom: 15px;
+  }
 }
 .ideas .ideas-item .item-img {
   position: relative;
@@ -590,7 +621,7 @@ a:hover {
   background-color: #DCE5E2;
   border: 1px solid #000000;
   border-radius: 54px 0 0 54px;
-  padding: 16px 32px;
+  padding: 16px 30px;
 }
 @media screen and (max-width: 575px) {
   .signup .container .signup_form form #site-signup {
@@ -605,7 +636,7 @@ a:hover {
   color: #FFFFFF;
   background: #000000;
   border-radius: 0 200px 200px 0;
-  padding: 16px 32px;
+  padding: 16px 30px;
   border: 1px solid #000000;
   cursor: pointer;
   transition: 0.3s;
@@ -613,6 +644,74 @@ a:hover {
 .signup .container .signup_form form .btn-signup:hover {
   color: #000000;
   background: #FFFFFF;
+}
+
+footer {
+  background-color: #F8F9FA;
+  border-top: 1px solid #DCE5E2;
+  padding-top: 55px;
+}
+footer .footer-items .footer-logo {
+  margin-bottom: 18px;
+}
+footer .footer-items .footer-logo img {
+  margin-bottom: 18px;
+}
+footer .footer-items .footer-logo p {
+  font-size: 16px;
+  line-height: 19px;
+  max-width: 304px;
+}
+@media screen and (max-width: 1199px) {
+  footer .footer-items .footer-logo p {
+    max-width: 100%;
+  }
+}
+footer .footer-nav h4 {
+  margin-bottom: 19px;
+}
+footer .footer-nav ul {
+  list-style: none;
+  padding-left: 0;
+}
+footer .footer-nav ul li {
+  font-size: 17px;
+  line-height: 22px;
+  margin-bottom: 14px;
+}
+footer .authors {
+  margin-top: 78px;
+  border-top: 1px solid #DCE5E2;
+}
+@media screen and (max-width: 575px) {
+  footer .authors {
+    margin-top: 0;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+footer .authors .author {
+  padding-top: 52px;
+  padding-bottom: 4px;
+  font-size: 18px;
+  line-height: 22px;
+}
+@media screen and (max-width: 575px) {
+  footer .authors .author {
+    padding-top: 4px;
+  }
+}
+footer .authors .author a:after {
+  content: "";
+  display: inline-block;
+  background-image: url("../img/see_all.svg");
+  background-size: contain;
+  width: 21px;
+  height: 22px;
+  vertical-align: middle;
+}
+footer .authors .author a:hover:after {
+  background-image: url("../img/see_all_grey.svg");
 }
 
 /*# sourceMappingURL=style.css.map */
