@@ -6,7 +6,6 @@ $font_headers: "Readex Pro";
     @content;
   }
 }
-
 @mixin img-adaptive($height) {
   position: relative;
   display: block;
@@ -29,7 +28,7 @@ body {
   font: $font_paragraph;
 }
 
-h2 {
+h1, h2 {
   font-size: 50px;
   line-height: 62px;
 }
@@ -64,12 +63,19 @@ a {
   font-family: $font_headers;
   text-align: center;
   padding-bottom: 55px;
+  @include max-screen(575px) {
+    padding-bottom: 25px;
+  }
 
   h3 {
     font-size: 42px;
     line-height: 52px;
     padding-bottom: 9px;
     margin: auto;
+    @include max-screen(575px) {
+      font-size: 32px;
+      line-height: 42px;
+    }
   }
 
   p {
@@ -111,6 +117,9 @@ a {
 //Carousel
 .carousel-main {
   padding-bottom: 75px;
+  @include max-screen(575px) {
+    padding-bottom: 25px;
+  }
 
   .carousel-indicators {
     li {
@@ -140,7 +149,7 @@ a {
         padding: 15px;
       }
 
-      h2 {
+      h1, h2 {
         font-family: $font_headers;
         margin-bottom: 19px;
         @include max-screen(1199px) {
@@ -206,6 +215,9 @@ a {
 //Categories
 .categories {
   padding-bottom: 100px;
+  @include max-screen(575px) {
+    padding-bottom: 25px;
+  }
 
   .categories-items {
     .item {
@@ -393,6 +405,9 @@ a {
 //Most selled
 .most-selled {
   padding-bottom: 74px;
+  @include max-screen(575px) {
+    padding-bottom: 25px;
+  }
 
   .most-selled-items {
     .item {
@@ -430,6 +445,9 @@ a {
 // Best items
 .best-products {
   padding-bottom: 72px;
+  @include max-screen(575px) {
+    padding-bottom: 25px;
+  }
 
   .best-peoducts-items {
     .item {
@@ -519,6 +537,9 @@ a {
       width: 100%;
       text-align: center;
       margin-bottom: 75px;
+      @include max-screen(575px) {
+        margin-bottom: 25px;
+      }
 
       a {
         display: inline-block;
@@ -567,6 +588,9 @@ a {
     form {
       position: relative;
       margin-bottom: 40px;
+      @include max-screen(575px) {
+        margin-bottom: 25px;
+      }
 
       .btn-search {
         width: 70px;
@@ -605,6 +629,9 @@ a {
       flex-wrap: wrap;
       justify-content: center;
       margin-bottom: 68px;
+      @include max-screen(575px) {
+        margin-bottom: 25px;
+      }
 
       .button {
         margin: 5px;
