@@ -221,6 +221,7 @@ a {
 
   .categories-items {
     .item {
+      display: block;
       max-width: 639px;
       background-color: white;
       box-shadow: 0 4px 35px rgba(0, 0, 0, 0.25);
@@ -231,6 +232,7 @@ a {
       }
 
       .categories-title {
+        display: block;
         margin-right: 42px;
         @include max-screen(991px) {
           margin-right: 5px;
@@ -244,7 +246,8 @@ a {
           margin-bottom: 0;
         }
 
-        h4 {
+        span {
+          display: block;
           font-family: $font_headers;
           font-size: 32px;
           line-height: 38px;
@@ -299,8 +302,8 @@ a {
             padding-top: 58px;
           }
 
-          h4 {
-            padding-bottom: 58px;
+          span {
+            padding-bottom: 66px;
           }
 
           width: 100%;
@@ -309,8 +312,8 @@ a {
               padding-top: 30px;
             }
 
-            h4 {
-              padding-bottom: 30px;
+            span {
+              padding-bottom: 38px;
             }
           }
           @include max-screen(991px) {
@@ -318,8 +321,8 @@ a {
               padding-top: 3px;
             }
 
-            h4 {
-              padding-bottom: 3px;
+            span {
+              padding-bottom: 13px;
             }
           }
           @include max-screen(767px) {
@@ -327,7 +330,7 @@ a {
               padding-top: 58px;
             }
 
-            h4 {
+            span {
               padding-bottom: 58px;
             }
           }
@@ -336,7 +339,7 @@ a {
               padding-top: 30px;
             }
 
-            h4 {
+            span {
               padding-bottom: 30px;
             }
           }
@@ -368,7 +371,7 @@ a {
             text-align: center;
           }
 
-          h4 {
+          span {
             text-align: center;
           }
         }
@@ -393,7 +396,7 @@ a {
             text-align: center;
           }
 
-          h4 {
+          span {
             text-align: center;
           }
         }

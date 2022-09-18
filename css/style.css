@@ -189,6 +189,7 @@ a:hover {
   }
 }
 .categories .categories-items .item {
+  display: block;
   max-width: 639px;
   background-color: white;
   box-shadow: 0 4px 35px rgba(0, 0, 0, 0.25);
@@ -198,6 +199,7 @@ a:hover {
   margin-top: 42px;
 }
 .categories .categories-items .item .categories-title {
+  display: block;
   margin-right: 42px;
 }
 @media screen and (max-width: 991px) {
@@ -212,14 +214,15 @@ a:hover {
   text-align: right;
   margin-bottom: 0;
 }
-.categories .categories-items .item .categories-title h4 {
+.categories .categories-items .item .categories-title span {
+  display: block;
   font-family: "Readex Pro";
   font-size: 32px;
   line-height: 38px;
   text-align: right;
 }
 @media screen and (max-width: 576px) {
-  .categories .categories-items .item .categories-title h4 {
+  .categories .categories-items .item .categories-title span {
     font-size: 22px;
     line-height: 28px;
   }
@@ -269,30 +272,30 @@ a:hover {
 .categories .categories-items .item.watch .categories-title p {
   padding-top: 58px;
 }
-.categories .categories-items .item.watch .categories-title h4 {
-  padding-bottom: 58px;
+.categories .categories-items .item.watch .categories-title span {
+  padding-bottom: 66px;
 }
 @media screen and (max-width: 1199px) {
   .categories .categories-items .item.watch .categories-title p {
     padding-top: 30px;
   }
-  .categories .categories-items .item.watch .categories-title h4 {
-    padding-bottom: 30px;
+  .categories .categories-items .item.watch .categories-title span {
+    padding-bottom: 38px;
   }
 }
 @media screen and (max-width: 991px) {
   .categories .categories-items .item.watch .categories-title p {
     padding-top: 3px;
   }
-  .categories .categories-items .item.watch .categories-title h4 {
-    padding-bottom: 3px;
+  .categories .categories-items .item.watch .categories-title span {
+    padding-bottom: 13px;
   }
 }
 @media screen and (max-width: 767px) {
   .categories .categories-items .item.watch .categories-title p {
     padding-top: 58px;
   }
-  .categories .categories-items .item.watch .categories-title h4 {
+  .categories .categories-items .item.watch .categories-title span {
     padding-bottom: 58px;
   }
 }
@@ -300,7 +303,7 @@ a:hover {
   .categories .categories-items .item.watch .categories-title p {
     padding-top: 30px;
   }
-  .categories .categories-items .item.watch .categories-title h4 {
+  .categories .categories-items .item.watch .categories-title span {
     padding-bottom: 30px;
   }
 }
@@ -333,7 +336,7 @@ a:hover {
 .categories .categories-items .item.phones .categories-title p {
   text-align: center;
 }
-.categories .categories-items .item.phones .categories-title h4 {
+.categories .categories-items .item.phones .categories-title span {
   text-align: center;
 }
 .categories .categories-items .item.tablet {
@@ -360,7 +363,7 @@ a:hover {
 .categories .categories-items .item.tablet .categories-title p {
   text-align: center;
 }
-.categories .categories-items .item.tablet .categories-title h4 {
+.categories .categories-items .item.tablet .categories-title span {
   text-align: center;
 }
 
